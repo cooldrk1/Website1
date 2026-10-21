@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Николай | Web Lab</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#eef2ff;color:#1e293b;line-height:1.65}header,main,footer{max-width:900px;margin:auto;padding:24px}header{padding-top:60px}header p{color:#4f46e5;font-weight:bold;letter-spacing:2px}h1{font-size:clamp(32px,6vw,54px);line-height:1.15;margin:12px 0}section{background:white;border-radius:18px;padding:28px;margin-bottom:20px;border:1px solid #dfe5f5}h2{margin-top:0;color:#3730a3}.badge{display:inline-block;background:#dcfce7;color:#166534;padding:6px 14px;border-radius:30px;font-weight:bold}a{color:#4338ca}footer{color:#64748b;padding-bottom:40px}code{background:#eef2ff;padding:3px 7px;border-radius:5px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<header><p>SOFTWARE ENGINEERING · WEB LAB</p><h1>Привет! Я Николай.</h1><p>Мой первый статический сайт для лабораторной работы.</p></header>
+<main>
+<section><span class="badge">It works!</span><h2>Добро пожаловать на мой сайт</h2><p>Я учусь на направлении Software Engineering. Изучаю программирование, веб-разработку и компьютерные сети.</p></section>
+<section><h2>О лабораторной работе</h2><p>Цель — разместить статический сайт на своём компьютере с помощью Apache и открыть его с другого устройства в локальной сети.</p><ul><li>HTML задаёт структуру страницы.</li><li>CSS оформляет страницу.</li><li>Apache передаёт файлы сайта браузеру по HTTP.</li></ul></section>
+<section><h2>Проверка доступа</h2><p>На компьютере с Apache откройте <code>http://localhost</code>. На другом устройстве в той же сети используйте <code>http://&lt;IP-компьютера&gt;</code>.</p><p>Адрес текущей страницы: <code id="address">смотрите адресную строку браузера</code></p></section>
+</main>
+<footer>Николай · Учебный проект · 2026</footer>
+<script>document.getElementById('address').textContent=location.protocol==='file:'?'Локальный файл — для проверки сети откройте сайт через Apache.':location.href;</script>
+</body>
+</html>
